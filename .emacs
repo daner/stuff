@@ -17,3 +17,12 @@
 (setq-default tab-stop-list '(4 8 12 16 20 24 28 32 36 40))
 (setq-default indent-tabs-mode t)
 (c-set-offset 'substatement-open 0)
+
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
+(setq x-select-enable-clipboard t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
