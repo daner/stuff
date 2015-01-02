@@ -6,6 +6,7 @@
 (setq make-backup-files nil) 
 (global-set-key (kbd "M-w") 'other-window)
 (split-window-right)
+(setq visible-bell 1)
 (defalias 'yes-or-no-p 'y-or-n-p)
 ;;(setq omnisharp-server-executable-path "F:/Dev/OmniSharpServer/OmniSharp/bin/Debug/Omnisharp.exe")
 (require 'package)
