@@ -3,12 +3,26 @@
 (setq-default indent-tabs-mode nil)
 (setq c-basic-indent 4)
 (setq tab-width 4)
-(setq make-backup-files nil) 
-(global-set-key (kbd "M-w") 'other-window)
+(setq make-backup-files nil)
+(delete-other-windows)
 (split-window-right)
 (setq visible-bell 1)
 (defalias 'yes-or-no-p 'y-or-n-p)
-;;(setq omnisharp-server-executable-path "F:/Dev/OmniSharpServer/OmniSharp/bin/Debug/Omnisharp.exe")
+
+(global-set-key (kbd "M-w") 'other-window)
+(global-set-key (kbd "M-f") 'find-file)
+(global-set-key (kbd "M-F") 'find-file-other-window)
+(global-set-key (kbd "M-o") 'query-replace)
+(global-set-key (kbd "M-s") 'save-buffer)
+(global-set-key (kbd "M-b") 'switch-to-buffer)
+(global-set-key (kbd "M-B") 'switch-to-buffer-other-window)
+(global-set-key (kbd "M-q") 'switch-to-next-buffer)
+(global-set-key (kbd "C-q") 'kill-buffer)
+
+;; https://github.com/genehack/smart-tab
+(require 'smart-tab)
+(global-smart-tab-mode 1)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
