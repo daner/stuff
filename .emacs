@@ -7,7 +7,7 @@
 (global-set-key (kbd "M-w") 'other-window)
 (split-window-right)
 (defalias 'yes-or-no-p 'y-or-n-p)
-(setq omnisharp-server-executable-path "F:/Dev/OmniSharpServer/OmniSharp/bin/Debug/Omnisharp.exe")
+;;(setq omnisharp-server-executable-path "F:/Dev/OmniSharpServer/OmniSharp/bin/Debug/Omnisharp.exe")
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
