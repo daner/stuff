@@ -19,6 +19,8 @@
 (global-set-key (kbd "M-q") 'switch-to-next-buffer)
 (global-set-key (kbd "C-q") 'kill-buffer)
 
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
 ;; https://github.com/genehack/smart-tab
 (require 'smart-tab)
 (global-smart-tab-mode 1)
