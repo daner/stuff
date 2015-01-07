@@ -4,9 +4,10 @@
 (setq c-basic-indent 4)
 (setq tab-width 4)
 (setq make-backup-files nil)
+(setq visible-bell 1)
 (delete-other-windows)
 (split-window-right)
-(setq visible-bell 1)
+(prefer-coding-system 'utf-8)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (global-set-key (kbd "M-w") 'other-window)
